@@ -6,24 +6,22 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class GitExampleActivity extends AppCompatActivity {
+public class GitActivity2 extends AppCompatActivity {
 
-    Button btnGit1;
+    Button btnGit2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.git_example);
+        setContentView(R.layout.activity_git2);
 
-        btnGit1 = (Button)findViewById(R.id.btnGit1);
-        btnGit1.setOnClickListener(new View.OnClickListener() {
+        btnGit2 = (Button)findViewById(R.id.btnGit2);
+        btnGit2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(GitExampleActivity.this, GitActivity2.class));
+                startActivity(new Intent(GitActivity2.this, GitExampleActivity.class));
                 finish();
             }
         });
-
-
     }
 }
